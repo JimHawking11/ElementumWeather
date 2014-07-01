@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EWSideMenuViewController.h"
 
-@interface EWAppDelegate : UIResponder <UIApplicationDelegate>
+@interface EWAppDelegate : UIResponder <UIApplicationDelegate, EWSideMenuViewControllerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

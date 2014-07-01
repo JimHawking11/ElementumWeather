@@ -10,4 +10,6 @@
 
 @interface EWViewController : UIViewController
 
+- (IBAction)jsonTapped:(id)sender;
+
 @end
