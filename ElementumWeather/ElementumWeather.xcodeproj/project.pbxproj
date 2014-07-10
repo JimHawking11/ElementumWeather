@@ -1,1152 +1,535 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>009D60CEBF92430AA61568E9</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>26886AE20B7F450AA7679A80</key>
-		<dict>
-			<key>fileRef</key>
-			<string>55CC1E37C407468EB8C9D22C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>55CC1E37C407468EB8C9D22C</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>5FA4714088014515AF510E4A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>658A41F2539C48EC89668968</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D4A221B219606B92000747C2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D4A221C419606B92000747C2</string>
-				<string>D4A221E319606B93000747C2</string>
-				<string>D4A221BD19606B92000747C2</string>
-				<string>D4A221BC19606B92000747C2</string>
-				<string>658A41F2539C48EC89668968</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D4A221B319606B92000747C2</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>CLASSPREFIX</key>
-				<string>EW</string>
-				<key>LastUpgradeCheck</key>
-				<string>0510</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>MikeSalkin</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>D4A221DB19606B93000747C2</key>
-					<dict>
-						<key>TestTargetID</key>
-						<string>D4A221BA19606B92000747C2</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>D4A221B619606B92000747C2</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>D4A221B219606B92000747C2</string>
-			<key>productRefGroup</key>
-			<string>D4A221BC19606B92000747C2</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>D4A221BA19606B92000747C2</string>
-				<string>D4A221DB19606B93000747C2</string>
-			</array>
-		</dict>
-		<key>D4A221B619606B92000747C2</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>D4A221EB19606B93000747C2</string>
-				<string>D4A221EC19606B93000747C2</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>D4A221B719606B92000747C2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D4A221D519606B92000747C2</string>
-				<string>D4A221CF19606B92000747C2</string>
-				<string>D4A221F519609B3D000747C2</string>
-				<string>D4A221CB19606B92000747C2</string>
-				<string>D4A221F819609DEF000747C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>D4A221B819606B92000747C2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D4A221C119606B92000747C2</string>
-				<string>D4A221C319606B92000747C2</string>
-				<string>D4A221BF19606B92000747C2</string>
-				<string>26886AE20B7F450AA7679A80</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>D4A221B919606B92000747C2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D4A221D719606B93000747C2</string>
-				<string>D4A221C919606B92000747C2</string>
-				<string>D4A221D219606B92000747C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>D4A221BA19606B92000747C2</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>D4A221ED19606B93000747C2</string>
-			<key>buildPhases</key>
-			<array>
-				<string>5FA4714088014515AF510E4A</string>
-				<string>D4A221B719606B92000747C2</string>
-				<string>D4A221B819606B92000747C2</string>
-				<string>D4A221B919606B92000747C2</string>
-				<string>009D60CEBF92430AA61568E9</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>ElementumWeather</string>
-			<key>productName</key>
-			<string>ElementumWeather</string>
-			<key>productReference</key>
-			<string>D4A221BB19606B92000747C2</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>D4A221BB19606B92000747C2</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>ElementumWeather.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>D4A221BC19606B92000747C2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D4A221BB19606B92000747C2</string>
-				<string>D4A221DC19606B93000747C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D4A221BD19606B92000747C2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D4A221BE19606B92000747C2</string>
-				<string>D4A221C019606B92000747C2</string>
-				<string>D4A221C219606B92000747C2</string>
-				<string>D4A221DD19606B93000747C2</string>
-				<string>55CC1E37C407468EB8C9D22C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D4A221BE19606B92000747C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>D4A221BF19606B92000747C2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D4A221BE19606B92000747C2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D4A221C019606B92000747C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>D4A221C119606B92000747C2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D4A221C019606B92000747C2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D4A221C219606B92000747C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>D4A221C319606B92000747C2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D4A221C219606B92000747C2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D4A221C419606B92000747C2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D4A221CD19606B92000747C2</string>
-				<string>D4A221CE19606B92000747C2</string>
-				<string>D4A221F619609DEF000747C2</string>
-				<string>D4A221F719609DEF000747C2</string>
-				<string>D4A221F319609B3D000747C2</string>
-				<string>D4A221F419609B3D000747C2</string>
-				<string>D4A221D319606B92000747C2</string>
-				<string>D4A221D419606B92000747C2</string>
-				<string>D4A221D019606B92000747C2</string>
-				<string>D4A221D619606B93000747C2</string>
-				<string>D4A221C519606B92000747C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>ElementumWeather</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D4A221C519606B92000747C2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D4A221C619606B92000747C2</string>
-				<string>D4A221C719606B92000747C2</string>
-				<string>D4A221CA19606B92000747C2</string>
-				<string>D4A221CC19606B92000747C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D4A221C619606B92000747C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>ElementumWeather-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D4A221C719606B92000747C2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D4A221C819606B92000747C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D4A221C819606B92000747C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D4A221C919606B92000747C2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D4A221C719606B92000747C2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D4A221CA19606B92000747C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D4A221CB19606B92000747C2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D4A221CA19606B92000747C2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D4A221CC19606B92000747C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>ElementumWeather-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D4A221CD19606B92000747C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>EWAppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D4A221CE19606B92000747C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>EWAppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D4A221CF19606B92000747C2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D4A221CE19606B92000747C2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D4A221D019606B92000747C2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D4A221D119606B92000747C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D4A221D119606B92000747C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D4A221D219606B92000747C2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D4A221D019606B92000747C2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D4A221D319606B92000747C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>EWViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D4A221D419606B92000747C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>EWViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D4A221D519606B92000747C2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D4A221D419606B92000747C2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D4A221D619606B93000747C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D4A221D719606B93000747C2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D4A221D619606B93000747C2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D4A221D819606B93000747C2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D4A221EA19606B93000747C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>D4A221D919606B93000747C2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D4A221DE19606B93000747C2</string>
-				<string>D4A221E019606B93000747C2</string>
-				<string>D4A221DF19606B93000747C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>D4A221DA19606B93000747C2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D4A221E819606B93000747C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>D4A221DB19606B93000747C2</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>D4A221F019606B93000747C2</string>
-			<key>buildPhases</key>
-			<array>
-				<string>D4A221D819606B93000747C2</string>
-				<string>D4A221D919606B93000747C2</string>
-				<string>D4A221DA19606B93000747C2</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>D4A221E219606B93000747C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>ElementumWeatherTests</string>
-			<key>productName</key>
-			<string>ElementumWeatherTests</string>
-			<key>productReference</key>
-			<string>D4A221DC19606B93000747C2</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>D4A221DC19606B93000747C2</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>ElementumWeatherTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>D4A221DD19606B93000747C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>XCTest.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/XCTest.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>D4A221DE19606B93000747C2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D4A221DD19606B93000747C2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D4A221DF19606B93000747C2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D4A221BE19606B92000747C2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D4A221E019606B93000747C2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D4A221C219606B92000747C2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D4A221E119606B93000747C2</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D4A221B319606B92000747C2</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>D4A221BA19606B92000747C2</string>
-			<key>remoteInfo</key>
-			<string>ElementumWeather</string>
-		</dict>
-		<key>D4A221E219606B93000747C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>D4A221BA19606B92000747C2</string>
-			<key>targetProxy</key>
-			<string>D4A221E119606B93000747C2</string>
-		</dict>
-		<key>D4A221E319606B93000747C2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D4A221E919606B93000747C2</string>
-				<string>D4A221E419606B93000747C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>ElementumWeatherTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D4A221E419606B93000747C2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D4A221E519606B93000747C2</string>
-				<string>D4A221E619606B93000747C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D4A221E519606B93000747C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>ElementumWeatherTests-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D4A221E619606B93000747C2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D4A221E719606B93000747C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D4A221E719606B93000747C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D4A221E819606B93000747C2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D4A221E619606B93000747C2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D4A221E919606B93000747C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>ElementumWeatherTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D4A221EA19606B93000747C2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D4A221E919606B93000747C2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D4A221EB19606B93000747C2</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>D4A221EC19606B93000747C2</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>D4A221ED19606B93000747C2</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>D4A221EE19606B93000747C2</string>
-				<string>D4A221EF19606B93000747C2</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>D4A221EE19606B93000747C2</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>658A41F2539C48EC89668968</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>ElementumWeather/ElementumWeather-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>ElementumWeather/ElementumWeather-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>D4A221EF19606B93000747C2</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>658A41F2539C48EC89668968</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>ElementumWeather/ElementumWeather-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>ElementumWeather/ElementumWeather-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>D4A221F019606B93000747C2</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>D4A221F119606B93000747C2</string>
-				<string>D4A221F219606B93000747C2</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>D4A221F119606B93000747C2</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/ElementumWeather.app/ElementumWeather</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>ElementumWeather/ElementumWeather-Prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>ElementumWeatherTests/ElementumWeatherTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>D4A221F219606B93000747C2</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/ElementumWeather.app/ElementumWeather</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>ElementumWeather/ElementumWeather-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>ElementumWeatherTests/ElementumWeatherTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>D4A221F319609B3D000747C2</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>EWSideMenuViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D4A221F419609B3D000747C2</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>EWSideMenuViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D4A221F519609B3D000747C2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D4A221F419609B3D000747C2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D4A221F619609DEF000747C2</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>EWMenuViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D4A221F719609DEF000747C2</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>EWMenuViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D4A221F819609DEF000747C2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D4A221F719609DEF000747C2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>D4A221B319606B92000747C2</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26886AE20B7F450AA7679A80 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CC1E37C407468EB8C9D22C /* libPods.a */; };
+		38484B6F196E3C4400965849 /* EWMTLWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = 38484B6E196E3C4400965849 /* EWMTLWeather.m */; };
+		D4A221BF19606B92000747C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A221BE19606B92000747C2 /* Foundation.framework */; };
+		D4A221C119606B92000747C2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A221C019606B92000747C2 /* CoreGraphics.framework */; };
+		D4A221C319606B92000747C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A221C219606B92000747C2 /* UIKit.framework */; };
+		D4A221C919606B92000747C2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4A221C719606B92000747C2 /* InfoPlist.strings */; };
+		D4A221CB19606B92000747C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A221CA19606B92000747C2 /* main.m */; };
+		D4A221CF19606B92000747C2 /* EWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A221CE19606B92000747C2 /* EWAppDelegate.m */; };
+		D4A221D219606B92000747C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4A221D019606B92000747C2 /* Main.storyboard */; };
+		D4A221D519606B92000747C2 /* EWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A221D419606B92000747C2 /* EWViewController.m */; };
+		D4A221D719606B93000747C2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4A221D619606B93000747C2 /* Images.xcassets */; };
+		D4A221DE19606B93000747C2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A221DD19606B93000747C2 /* XCTest.framework */; };
+		D4A221DF19606B93000747C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A221BE19606B92000747C2 /* Foundation.framework */; };
+		D4A221E019606B93000747C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A221C219606B92000747C2 /* UIKit.framework */; };
+		D4A221E819606B93000747C2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4A221E619606B93000747C2 /* InfoPlist.strings */; };
+		D4A221EA19606B93000747C2 /* ElementumWeatherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A221E919606B93000747C2 /* ElementumWeatherTests.m */; };
+		D4A221F519609B3D000747C2 /* EWSideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A221F419609B3D000747C2 /* EWSideMenuViewController.m */; };
+		D4A221F819609DEF000747C2 /* EWMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A221F719609DEF000747C2 /* EWMenuViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D4A221E119606B93000747C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4A221B319606B92000747C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4A221BA19606B92000747C2;
+			remoteInfo = ElementumWeather;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		38484B6D196E3C4400965849 /* EWMTLWeather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EWMTLWeather.h; sourceTree = "<group>"; };
+		38484B6E196E3C4400965849 /* EWMTLWeather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EWMTLWeather.m; sourceTree = "<group>"; };
+		55CC1E37C407468EB8C9D22C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		658A41F2539C48EC89668968 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		D4A221BB19606B92000747C2 /* ElementumWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElementumWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4A221BE19606B92000747C2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D4A221C019606B92000747C2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D4A221C219606B92000747C2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D4A221C619606B92000747C2 /* ElementumWeather-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ElementumWeather-Info.plist"; sourceTree = "<group>"; };
+		D4A221C819606B92000747C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D4A221CA19606B92000747C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D4A221CC19606B92000747C2 /* ElementumWeather-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ElementumWeather-Prefix.pch"; sourceTree = "<group>"; };
+		D4A221CD19606B92000747C2 /* EWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EWAppDelegate.h; sourceTree = "<group>"; };
+		D4A221CE19606B92000747C2 /* EWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EWAppDelegate.m; sourceTree = "<group>"; };
+		D4A221D119606B92000747C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D4A221D319606B92000747C2 /* EWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EWViewController.h; sourceTree = "<group>"; };
+		D4A221D419606B92000747C2 /* EWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EWViewController.m; sourceTree = "<group>"; };
+		D4A221D619606B93000747C2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D4A221DC19606B93000747C2 /* ElementumWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElementumWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4A221DD19606B93000747C2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D4A221E519606B93000747C2 /* ElementumWeatherTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ElementumWeatherTests-Info.plist"; sourceTree = "<group>"; };
+		D4A221E719606B93000747C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D4A221E919606B93000747C2 /* ElementumWeatherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ElementumWeatherTests.m; sourceTree = "<group>"; };
+		D4A221F319609B3D000747C2 /* EWSideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EWSideMenuViewController.h; sourceTree = "<group>"; };
+		D4A221F419609B3D000747C2 /* EWSideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EWSideMenuViewController.m; sourceTree = "<group>"; };
+		D4A221F619609DEF000747C2 /* EWMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EWMenuViewController.h; sourceTree = "<group>"; };
+		D4A221F719609DEF000747C2 /* EWMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EWMenuViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4A221B819606B92000747C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4A221C119606B92000747C2 /* CoreGraphics.framework in Frameworks */,
+				D4A221C319606B92000747C2 /* UIKit.framework in Frameworks */,
+				D4A221BF19606B92000747C2 /* Foundation.framework in Frameworks */,
+				26886AE20B7F450AA7679A80 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4A221D919606B93000747C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4A221DE19606B93000747C2 /* XCTest.framework in Frameworks */,
+				D4A221E019606B93000747C2 /* UIKit.framework in Frameworks */,
+				D4A221DF19606B93000747C2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D4A221B219606B92000747C2 = {
+			isa = PBXGroup;
+			children = (
+				D4A221C419606B92000747C2 /* ElementumWeather */,
+				D4A221E319606B93000747C2 /* ElementumWeatherTests */,
+				D4A221BD19606B92000747C2 /* Frameworks */,
+				D4A221BC19606B92000747C2 /* Products */,
+				658A41F2539C48EC89668968 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		D4A221BC19606B92000747C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4A221BB19606B92000747C2 /* ElementumWeather.app */,
+				D4A221DC19606B93000747C2 /* ElementumWeatherTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4A221BD19606B92000747C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4A221BE19606B92000747C2 /* Foundation.framework */,
+				D4A221C019606B92000747C2 /* CoreGraphics.framework */,
+				D4A221C219606B92000747C2 /* UIKit.framework */,
+				D4A221DD19606B93000747C2 /* XCTest.framework */,
+				55CC1E37C407468EB8C9D22C /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4A221C419606B92000747C2 /* ElementumWeather */ = {
+			isa = PBXGroup;
+			children = (
+				D4A221CD19606B92000747C2 /* EWAppDelegate.h */,
+				D4A221CE19606B92000747C2 /* EWAppDelegate.m */,
+				38484B6D196E3C4400965849 /* EWMTLWeather.h */,
+				38484B6E196E3C4400965849 /* EWMTLWeather.m */,
+				D4A221F619609DEF000747C2 /* EWMenuViewController.h */,
+				D4A221F719609DEF000747C2 /* EWMenuViewController.m */,
+				D4A221F319609B3D000747C2 /* EWSideMenuViewController.h */,
+				D4A221F419609B3D000747C2 /* EWSideMenuViewController.m */,
+				D4A221D319606B92000747C2 /* EWViewController.h */,
+				D4A221D419606B92000747C2 /* EWViewController.m */,
+				D4A221D019606B92000747C2 /* Main.storyboard */,
+				D4A221D619606B93000747C2 /* Images.xcassets */,
+				D4A221C519606B92000747C2 /* Supporting Files */,
+			);
+			path = ElementumWeather;
+			sourceTree = "<group>";
+		};
+		D4A221C519606B92000747C2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4A221C619606B92000747C2 /* ElementumWeather-Info.plist */,
+				D4A221C719606B92000747C2 /* InfoPlist.strings */,
+				D4A221CA19606B92000747C2 /* main.m */,
+				D4A221CC19606B92000747C2 /* ElementumWeather-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D4A221E319606B93000747C2 /* ElementumWeatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				D4A221E919606B93000747C2 /* ElementumWeatherTests.m */,
+				D4A221E419606B93000747C2 /* Supporting Files */,
+			);
+			path = ElementumWeatherTests;
+			sourceTree = "<group>";
+		};
+		D4A221E419606B93000747C2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4A221E519606B93000747C2 /* ElementumWeatherTests-Info.plist */,
+				D4A221E619606B93000747C2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D4A221BA19606B92000747C2 /* ElementumWeather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4A221ED19606B93000747C2 /* Build configuration list for PBXNativeTarget "ElementumWeather" */;
+			buildPhases = (
+				5FA4714088014515AF510E4A /* Check Pods Manifest.lock */,
+				D4A221B719606B92000747C2 /* Sources */,
+				D4A221B819606B92000747C2 /* Frameworks */,
+				D4A221B919606B92000747C2 /* Resources */,
+				009D60CEBF92430AA61568E9 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ElementumWeather;
+			productName = ElementumWeather;
+			productReference = D4A221BB19606B92000747C2 /* ElementumWeather.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D4A221DB19606B93000747C2 /* ElementumWeatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4A221F019606B93000747C2 /* Build configuration list for PBXNativeTarget "ElementumWeatherTests" */;
+			buildPhases = (
+				D4A221D819606B93000747C2 /* Sources */,
+				D4A221D919606B93000747C2 /* Frameworks */,
+				D4A221DA19606B93000747C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4A221E219606B93000747C2 /* PBXTargetDependency */,
+			);
+			name = ElementumWeatherTests;
+			productName = ElementumWeatherTests;
+			productReference = D4A221DC19606B93000747C2 /* ElementumWeatherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4A221B319606B92000747C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = EW;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = MikeSalkin;
+				TargetAttributes = {
+					D4A221DB19606B93000747C2 = {
+						TestTargetID = D4A221BA19606B92000747C2;
+					};
+				};
+			};
+			buildConfigurationList = D4A221B619606B92000747C2 /* Build configuration list for PBXProject "ElementumWeather" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D4A221B219606B92000747C2;
+			productRefGroup = D4A221BC19606B92000747C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4A221BA19606B92000747C2 /* ElementumWeather */,
+				D4A221DB19606B93000747C2 /* ElementumWeatherTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D4A221B919606B92000747C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4A221D719606B93000747C2 /* Images.xcassets in Resources */,
+				D4A221C919606B92000747C2 /* InfoPlist.strings in Resources */,
+				D4A221D219606B92000747C2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4A221DA19606B93000747C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4A221E819606B93000747C2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		009D60CEBF92430AA61568E9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FA4714088014515AF510E4A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4A221B719606B92000747C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4A221D519606B92000747C2 /* EWViewController.m in Sources */,
+				D4A221CF19606B92000747C2 /* EWAppDelegate.m in Sources */,
+				38484B6F196E3C4400965849 /* EWMTLWeather.m in Sources */,
+				D4A221F519609B3D000747C2 /* EWSideMenuViewController.m in Sources */,
+				D4A221CB19606B92000747C2 /* main.m in Sources */,
+				D4A221F819609DEF000747C2 /* EWMenuViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4A221D819606B93000747C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4A221EA19606B93000747C2 /* ElementumWeatherTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4A221E219606B93000747C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4A221BA19606B92000747C2 /* ElementumWeather */;
+			targetProxy = D4A221E119606B93000747C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D4A221C719606B92000747C2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4A221C819606B92000747C2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D4A221D019606B92000747C2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4A221D119606B92000747C2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D4A221E619606B93000747C2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4A221E719606B93000747C2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D4A221EB19606B93000747C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D4A221EC19606B93000747C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D4A221EE19606B93000747C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 658A41F2539C48EC89668968 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ElementumWeather/ElementumWeather-Prefix.pch";
+				INFOPLIST_FILE = "ElementumWeather/ElementumWeather-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D4A221EF19606B93000747C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 658A41F2539C48EC89668968 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ElementumWeather/ElementumWeather-Prefix.pch";
+				INFOPLIST_FILE = "ElementumWeather/ElementumWeather-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D4A221F119606B93000747C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ElementumWeather.app/ElementumWeather";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ElementumWeather/ElementumWeather-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ElementumWeatherTests/ElementumWeatherTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D4A221F219606B93000747C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ElementumWeather.app/ElementumWeather";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ElementumWeather/ElementumWeather-Prefix.pch";
+				INFOPLIST_FILE = "ElementumWeatherTests/ElementumWeatherTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4A221B619606B92000747C2 /* Build configuration list for PBXProject "ElementumWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4A221EB19606B93000747C2 /* Debug */,
+				D4A221EC19606B93000747C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4A221ED19606B93000747C2 /* Build configuration list for PBXNativeTarget "ElementumWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4A221EE19606B93000747C2 /* Debug */,
+				D4A221EF19606B93000747C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4A221F019606B93000747C2 /* Build configuration list for PBXNativeTarget "ElementumWeatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4A221F119606B93000747C2 /* Debug */,
+				D4A221F219606B93000747C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D4A221B319606B92000747C2 /* Project object */;
+}

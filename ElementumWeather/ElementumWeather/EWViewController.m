@@ -8,7 +8,7 @@
 
 #import "EWViewController.h"
 #import "EWSideMenuViewController.h"
-
+#import "EWMTLWeather.h"
 static NSString * const BaseURLString = @"http://api.openweathermap.org/data/2.5/";
 
 @interface EWViewController ()
@@ -44,7 +44,7 @@ static NSString * const BaseURLString = @"http://api.openweathermap.org/data/2.5
 - (IBAction)jsonTapped:(id)sender
 {
     // 1
-    NSString *string = [NSString stringWithFormat:@"%@weather?q=London,uk", BaseURLString];
+    NSString *string = [NSString stringWithFormat:@"%@weather?q=Minneapolis", BaseURLString];
     NSURL *url = [NSURL URLWithString:string];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
@@ -55,6 +55,7 @@ static NSString * const BaseURLString = @"http://api.openweathermap.org/data/2.5
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         
         // 3
+        EWMTLWeather *weather = [MTLJSONAdapter modelOfClass:EWMTLWeather.class fromJSONDictionary:responseObject error:NULL];
         self.title = @"JSON Retrieved";
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
