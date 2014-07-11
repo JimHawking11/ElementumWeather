@@ -2,7 +2,7 @@
 //  EWSideMenuViewController.m
 //  ElementumWeather
 //
-//  Created by Kyara Moss on 6/29/14.
+//  Created by Mike Salkin on 6/29/14.
 //  Copyright (c) 2014 MikeSalkin. All rights reserved.
 //
 
@@ -35,7 +35,7 @@ static NSTimeInterval const kDefaultSwapAnimationClosedDuration = 0.35;
     return self;
 }
 
-- (id)initWithMenuViewController:(UIViewController *)menuViewController mainViewController:(UIViewController *)mainViewController
+- (id)initWithMenuViewController:(UIViewController *)menuViewController mainViewController:(EWViewController *)mainViewController
 {
     self = [super initWithNibName:nil bundle:nil];
     if (self) {
@@ -288,7 +288,7 @@ static NSTimeInterval const kDefaultSwapAnimationClosedDuration = 0.35;
     }
 }
 
-- (void)setMainViewController:(UIViewController *)mainViewController animated:(BOOL)animated closeMenu:(BOOL)closeMenu
+- (void)setMainViewController:(EWViewController *)mainViewController animated:(BOOL)animated closeMenu:(BOOL)closeMenu
 {
     UIViewController *outgoingViewController = self.mainViewController;
     UIViewController *incomingViewController = mainViewController;

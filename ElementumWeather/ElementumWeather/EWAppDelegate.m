@@ -2,7 +2,7 @@
 //  EWAppDelegate.m
 //  ElementumWeather
 //
-//  Created by Kyara Moss on 6/29/14.
+//  Created by Mike Salkin on 6/29/14.
 //  Copyright (c) 2014 MikeSalkin. All rights reserved.
 //
 
@@ -14,9 +14,7 @@
 
 @interface EWAppDelegate ()
 
-@property (nonatomic, strong) EWSideMenuViewController *sideMenuViewController;
-@property (nonatomic, strong) EWMenuViewController *menuViewController;
-@property (nonatomic, strong) EWViewController *mainViewController;
+
 
 @end
 
@@ -26,8 +24,8 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    self.menuViewController = [[EWMenuViewController alloc] initWithNibName:nil bundle:nil];
-    self.mainViewController = [[EWViewController alloc] initWithNibName:nil bundle:nil];
+    self.menuViewController = [[EWMenuViewController alloc] initWithNibName:@"EWMenuViewController" bundle:nil];
+    self.mainViewController = [[EWViewController alloc] initWithNibName:@"EWViewController" bundle:nil];
     
     self.sideMenuViewController = [[EWSideMenuViewController alloc] initWithMenuViewController:self.menuViewController mainViewController:[[UINavigationController alloc] initWithRootViewController:self.mainViewController]];
     self.sideMenuViewController.shadowColor = [UIColor blackColor];
@@ -36,7 +34,7 @@
     self.sideMenuViewController.delegate = self;
     self.window.rootViewController = self.sideMenuViewController;
     
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.backgroundColor = [UIColor blackColor];
     [self.window makeKeyAndVisible];
     return YES;
 }

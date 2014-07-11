@@ -2,11 +2,12 @@
 //  EWSideMenuViewController.h
 //  ElementumWeather
 //
-//  Created by Kyara Moss on 6/29/14.
+//  Created by Mike Salkin on 6/29/14.
 //  Copyright (c) 2014 MikeSalkin. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import "EWViewController.h"
 
 @class EWSideMenuViewController;
 
@@ -53,7 +54,7 @@ typedef NS_ENUM(NSInteger, EWSideMenuAnimationType) {
 @property (nonatomic, strong) IBOutlet UIViewController *menuViewController;
 
 /** Main View */
-@property (nonatomic, strong) IBOutlet UIViewController *mainViewController;
+@property (nonatomic, strong) IBOutlet EWViewController *mainViewController;
 
 /** When the menu is opened, a transparent button is displayed over the main view. This property gives the opportunity to modify it's accessibility label. */
 @property (nonatomic, copy) NSString *closeOverlayAccessibilityLabel;

@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		26886AE20B7F450AA7679A80 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CC1E37C407468EB8C9D22C /* libPods.a */; };
 		38484B6F196E3C4400965849 /* EWMTLWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = 38484B6E196E3C4400965849 /* EWMTLWeather.m */; };
+		384E42A0196F171C00DD8200 /* EWViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 384E429F196F171C00DD8200 /* EWViewController.xib */; };
+		384E42A7196F82DD00DD8200 /* DetailsHandle.png in Resources */ = {isa = PBXBuildFile; fileRef = 384E42A6196F82DD00DD8200 /* DetailsHandle.png */; };
+		384E42AA196F8D9500DD8200 /* sunrise.png in Resources */ = {isa = PBXBuildFile; fileRef = 384E42A8196F8D9500DD8200 /* sunrise.png */; };
+		384E42AB196F8D9500DD8200 /* sunset.png in Resources */ = {isa = PBXBuildFile; fileRef = 384E42A9196F8D9500DD8200 /* sunset.png */; };
+		384E42AD196F902100DD8200 /* pressure.png in Resources */ = {isa = PBXBuildFile; fileRef = 384E42AC196F902100DD8200 /* pressure.png */; };
+		384E42B0196F922600DD8200 /* humidity.png in Resources */ = {isa = PBXBuildFile; fileRef = 384E42AE196F922600DD8200 /* humidity.png */; };
+		384E42B1196F922600DD8200 /* windspeed.png in Resources */ = {isa = PBXBuildFile; fileRef = 384E42AF196F922600DD8200 /* windspeed.png */; };
+		384E42B3196F961800DD8200 /* EWMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 384E42B2196F961800DD8200 /* EWMenuViewController.xib */; };
+		384E42B519706AD000DD8200 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384E42B419706AD000DD8200 /* CoreLocation.framework */; };
 		D4A221BF19606B92000747C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A221BE19606B92000747C2 /* Foundation.framework */; };
 		D4A221C119606B92000747C2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A221C019606B92000747C2 /* CoreGraphics.framework */; };
 		D4A221C319606B92000747C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A221C219606B92000747C2 /* UIKit.framework */; };
@@ -40,6 +49,15 @@
 /* Begin PBXFileReference section */
 		38484B6D196E3C4400965849 /* EWMTLWeather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EWMTLWeather.h; sourceTree = "<group>"; };
 		38484B6E196E3C4400965849 /* EWMTLWeather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EWMTLWeather.m; sourceTree = "<group>"; };
+		384E429F196F171C00DD8200 /* EWViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EWViewController.xib; sourceTree = "<group>"; };
+		384E42A6196F82DD00DD8200 /* DetailsHandle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DetailsHandle.png; sourceTree = "<group>"; };
+		384E42A8196F8D9500DD8200 /* sunrise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunrise.png; sourceTree = "<group>"; };
+		384E42A9196F8D9500DD8200 /* sunset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunset.png; sourceTree = "<group>"; };
+		384E42AC196F902100DD8200 /* pressure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pressure.png; sourceTree = "<group>"; };
+		384E42AE196F922600DD8200 /* humidity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = humidity.png; sourceTree = "<group>"; };
+		384E42AF196F922600DD8200 /* windspeed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = windspeed.png; sourceTree = "<group>"; };
+		384E42B2196F961800DD8200 /* EWMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EWMenuViewController.xib; sourceTree = "<group>"; };
+		384E42B419706AD000DD8200 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		55CC1E37C407468EB8C9D22C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		658A41F2539C48EC89668968 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		D4A221BB19606B92000747C2 /* ElementumWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElementumWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				384E42B519706AD000DD8200 /* CoreLocation.framework in Frameworks */,
 				D4A221C119606B92000747C2 /* CoreGraphics.framework in Frameworks */,
 				D4A221C319606B92000747C2 /* UIKit.framework in Frameworks */,
 				D4A221BF19606B92000747C2 /* Foundation.framework in Frameworks */,
@@ -92,6 +111,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		384E42A1196F822E00DD8200 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				384E42AE196F922600DD8200 /* humidity.png */,
+				384E42AF196F922600DD8200 /* windspeed.png */,
+				384E42AC196F902100DD8200 /* pressure.png */,
+				384E42A8196F8D9500DD8200 /* sunrise.png */,
+				384E42A9196F8D9500DD8200 /* sunset.png */,
+				384E42A6196F82DD00DD8200 /* DetailsHandle.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		D4A221B219606B92000747C2 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +147,7 @@
 		D4A221BD19606B92000747C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				384E42B419706AD000DD8200 /* CoreLocation.framework */,
 				D4A221BE19606B92000747C2 /* Foundation.framework */,
 				D4A221C019606B92000747C2 /* CoreGraphics.framework */,
 				D4A221C219606B92000747C2 /* UIKit.framework */,
@@ -129,16 +162,19 @@
 			children = (
 				D4A221CD19606B92000747C2 /* EWAppDelegate.h */,
 				D4A221CE19606B92000747C2 /* EWAppDelegate.m */,
-				38484B6D196E3C4400965849 /* EWMTLWeather.h */,
-				38484B6E196E3C4400965849 /* EWMTLWeather.m */,
 				D4A221F619609DEF000747C2 /* EWMenuViewController.h */,
 				D4A221F719609DEF000747C2 /* EWMenuViewController.m */,
+				384E42B2196F961800DD8200 /* EWMenuViewController.xib */,
+				38484B6D196E3C4400965849 /* EWMTLWeather.h */,
+				38484B6E196E3C4400965849 /* EWMTLWeather.m */,
 				D4A221F319609B3D000747C2 /* EWSideMenuViewController.h */,
 				D4A221F419609B3D000747C2 /* EWSideMenuViewController.m */,
 				D4A221D319606B92000747C2 /* EWViewController.h */,
 				D4A221D419606B92000747C2 /* EWViewController.m */,
+				384E429F196F171C00DD8200 /* EWViewController.xib */,
 				D4A221D019606B92000747C2 /* Main.storyboard */,
 				D4A221D619606B93000747C2 /* Images.xcassets */,
+				384E42A1196F822E00DD8200 /* Images */,
 				D4A221C519606B92000747C2 /* Supporting Files */,
 			);
 			path = ElementumWeather;
@@ -252,9 +288,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				384E42A0196F171C00DD8200 /* EWViewController.xib in Resources */,
 				D4A221D719606B93000747C2 /* Images.xcassets in Resources */,
 				D4A221C919606B92000747C2 /* InfoPlist.strings in Resources */,
+				384E42AA196F8D9500DD8200 /* sunrise.png in Resources */,
+				384E42A7196F82DD00DD8200 /* DetailsHandle.png in Resources */,
+				384E42B0196F922600DD8200 /* humidity.png in Resources */,
+				384E42B1196F922600DD8200 /* windspeed.png in Resources */,
 				D4A221D219606B92000747C2 /* Main.storyboard in Resources */,
+				384E42AB196F8D9500DD8200 /* sunset.png in Resources */,
+				384E42B3196F961800DD8200 /* EWMenuViewController.xib in Resources */,
+				384E42AD196F902100DD8200 /* pressure.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
