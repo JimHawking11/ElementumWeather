@@ -29,11 +29,11 @@ bool isClosed;
     [super viewDidLoad];
     
     self.title = @"Current Weather";
-    //self.view.backgroundColor = [UIColor grayColor];
     
     UIBarButtonItem *openItem = [[UIBarButtonItem alloc] initWithTitle:@"Open" style:UIBarButtonItemStylePlain target:self action:@selector(openButtonPressed)];
     self.navigationItem.leftBarButtonItem = openItem;
     
+    //Start GPS Tracking
     self.locationManager = [[CLLocationManager alloc] init];
     self.locationManager.delegate = self;
     self.locationManager.distanceFilter = kCLDistanceFilterNone;
@@ -75,6 +75,7 @@ bool isClosed;
 }
 
 - (void)updateWeatherWithLocation:(NSString*)locationName{
+    locationName = [locationName stringByReplacingOccurrencesOfString:@" " withString:@""];
     NSString *connectionString = [NSString stringWithFormat:@"%@weather?q=%@", BaseURLString, locationName];
     NSURL *url = [NSURL URLWithString:connectionString];
     [self loadWeather:url];
@@ -82,18 +83,27 @@ bool isClosed;
 
 - (void)loadWeather:(NSURL*)url
 {
-    // 1
-
+    //Make API Call
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
-    // 2
     AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
     operation.responseSerializer = [AFJSONResponseSerializer serializer];
     
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-        
-        // 3
         EWMTLWeather *weather = [MTLJSONAdapter modelOfClass:EWMTLWeather.class fromJSONDictionary:responseObject error:NULL];
+        
+        //Handle Bad City
+        if(weather.date == nil){
+            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error Retrieving Weather"
+                                                            message:@"Invalid City"
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"Ok"
+                                                  otherButtonTitles:nil];
+            [alertView show];
+            return;
+        }
+        
+        //Update Fields
         self.title = weather.locationName;
         self.condition.text = weather.condition;
         self.curTemp.text = [NSString stringWithFormat:@"%d\u00B0", [weather.temperature intValue]];
@@ -118,6 +128,7 @@ bool isClosed;
     [operation start];
 }
 
+//Update GPS Location
 - (void)locationManager:(CLLocationManager *)manager
     didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
     

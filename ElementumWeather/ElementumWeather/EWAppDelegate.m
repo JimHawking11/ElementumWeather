@@ -20,6 +20,7 @@
 
 @implementation EWAppDelegate
 
+//Initalize Slide Control
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

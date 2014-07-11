@@ -10,6 +10,7 @@
 
 @implementation EWMTLWeather
 
+//Key Map
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{
              @"date": @"dt",
@@ -28,6 +29,7 @@
              };
 }
 
+//Data Transformers
 + (NSValueTransformer *)dateJSONTransformer {
     // 1
     return [MTLValueTransformer reversibleTransformerWithForwardBlock:^(NSString *str) {
@@ -38,7 +40,6 @@
 }
 
 + (NSValueTransformer *)tempJSONTransformer {
-    // 1
     return [MTLValueTransformer reversibleTransformerWithForwardBlock:^(NSNumber *calvin) {
         float temp = ((calvin.floatValue - CALVIN_TO_CELSIUS) * 1.8f) + 32;
         return @(temp);
@@ -48,8 +49,6 @@
     }];
 }
 
-//(K - 273.15)* 1.8000 + 32.00
-// 2
 + (NSValueTransformer *)sunriseJSONTransformer {
     return [self dateJSONTransformer];
 }

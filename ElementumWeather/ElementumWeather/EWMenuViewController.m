@@ -33,17 +33,7 @@
     [self.view addSubview:self.backgroundImageView];
 }
 
-- (void)changeButtonPressed
-{
-    UINavigationController *controller = [[UINavigationController alloc] initWithRootViewController:[EWViewController new]];
-    [self.sideMenuViewController setMainViewController:controller animated:YES closeMenu:YES];
-}
-
-- (void)closeButtonPressed
-{
-    [self.sideMenuViewController closeMenuAnimated:YES completion:nil];
-}
-
+//Load Local Weather
 - (IBAction)localWeather:(id)sender
 {
     EWAppDelegate* appDelegate = (EWAppDelegate*)[[UIApplication sharedApplication]delegate];
@@ -52,6 +42,7 @@
     [self.cityField resignFirstResponder];
 }
 
+//Load Weather for given city
 - (IBAction)cityWeather:(id)sender
 {
     EWAppDelegate* appDelegate = (EWAppDelegate*)[[UIApplication sharedApplication]delegate];
