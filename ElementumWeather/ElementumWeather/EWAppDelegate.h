@@ -16,5 +16,11 @@
 @property (nonatomic, strong) EWSideMenuViewController *sideMenuViewController;
 @property (nonatomic, strong) EWMenuViewController *menuViewController;
 @property (nonatomic, strong) EWViewController *mainViewController;
+@property (nonatomic, retain, readonly) NSManagedObjectModel *managedObjectModel;
+@property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+
+- (NSURL *)applicationDocumentsDirectory;
+- (void) saveContext;
 
 @end

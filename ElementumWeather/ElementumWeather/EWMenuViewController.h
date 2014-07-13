@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 
 
-@interface EWMenuViewController : UIViewController
+@interface EWMenuViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, retain) NSArray *cityList;
+@property (nonatomic, strong) IBOutlet UITableView *cities;
 
 @end

@@ -9,6 +9,7 @@
 #import "EWViewController.h"
 #import "EWSideMenuViewController.h"
 #import "EWMTLWeather.h"
+#import "EWAppDelegate.h"
 
 static NSString * const BaseURLString = @"http://api.openweathermap.org/data/2.5/";
 
@@ -116,6 +117,7 @@ bool isClosed;
         self.sunrise.text = [dateFormatter stringFromDate:weather.sunrise];
         self.sunset.text = [dateFormatter stringFromDate:weather.sunset];
         
+        [self addCityToStore:weather.locationName];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error Retrieving Weather"
                                                             message:[error localizedDescription]
@@ -126,6 +128,32 @@ bool isClosed;
     }];
     
     [operation start];
+}
+
+-(void)addCityToStore:(NSString *)cityName{
+    //Check for Duplicates
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription
+                                   entityForName:@"City" inManagedObjectContext:[self managedObjectContext]];
+    [fetchRequest setEntity:entity];
+    
+    NSError *error = nil;
+    NSArray *fetchedObjects = [[self managedObjectContext] executeFetchRequest:fetchRequest error:&error];
+    for (NSManagedObject *city in fetchedObjects) {
+        NSString *fetchedName = [city valueForKey:@"name"];
+        if ([fetchedName isEqual:cityName]) {
+            return;
+        }
+    }
+    
+    //Add Object
+    NSManagedObjectContext *context = [self managedObjectContext];
+    NSManagedObject *cityInfo = [NSEntityDescription
+                                       insertNewObjectForEntityForName:@"City"
+                                       inManagedObjectContext:context];
+    [cityInfo setValue:cityName forKey:@"name"];
+    EWAppDelegate* appDelegate = (EWAppDelegate*)[[UIApplication sharedApplication]delegate];
+    [appDelegate saveContext];
 }
 
 //Update GPS Location

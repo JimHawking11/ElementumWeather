@@ -31,6 +31,15 @@
     self.backgroundImageView.frame = imageViewRect;
     self.backgroundImageView.contentMode = UIViewContentModeScaleAspectFit;
     [self.view addSubview:self.backgroundImageView];
+    
+    //Get City List
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription
+                                   entityForName:@"City" inManagedObjectContext:[self managedObjectContext]];
+    [fetchRequest setEntity:entity];
+    
+    NSError *error = nil;
+    self.cityList = [[self managedObjectContext] executeFetchRequest:fetchRequest error:&error];
 }
 
 //Load Local Weather
@@ -54,6 +63,41 @@
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
     return UIStatusBarStyleLightContent;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [self.cityList count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *simpleTableIdentifier = @"SimpleTableItem";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+    }
+    
+    UIFont *myFont = [ UIFont fontWithName: @"Heiti TC Light" size: 14.0 ];
+    cell.textLabel.font = myFont;
+    cell.backgroundColor = [UIColor redColor];
+    cell.textLabel.textColor = [UIColor blackColor];
+    
+    NSManagedObject *city = [self.cityList objectAtIndex:indexPath.row];
+    NSString *cityName = [city valueForKey:@"name"];
+    cell.textLabel.text = cityName;
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSManagedObject *city = [self.cityList objectAtIndex:indexPath.row];
+    
+    EWAppDelegate* appDelegate = (EWAppDelegate*)[[UIApplication sharedApplication]delegate];
+    [appDelegate.mainViewController updateWeatherWithLocation:[city valueForKey:@"name"]];
+    [self.sideMenuViewController closeMenuAnimated:YES completion:nil];
+    [self.cityField resignFirstResponder];
 }
 
 @end

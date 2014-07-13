@@ -22,6 +22,7 @@
 @property (nonatomic, strong) IBOutlet UILabel *windspeed;
 @property (nonatomic, strong) IBOutlet UILabel *sunrise;
 @property (nonatomic, strong) IBOutlet UILabel *sunset;
+@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 
 - (void)updateWeatherLocal;
 - (void)updateWeatherWithLocation:(NSString*)locationName;

@@ -18,6 +18,7 @@
 		384E42B1196F922600DD8200 /* windspeed.png in Resources */ = {isa = PBXBuildFile; fileRef = 384E42AF196F922600DD8200 /* windspeed.png */; };
 		384E42B3196F961800DD8200 /* EWMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 384E42B2196F961800DD8200 /* EWMenuViewController.xib */; };
 		384E42B519706AD000DD8200 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384E42B419706AD000DD8200 /* CoreLocation.framework */; };
+		384E42B819731EE900DD8200 /* EWCDWeather.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 384E42B619731EE900DD8200 /* EWCDWeather.xcdatamodeld */; };
 		D4A221BF19606B92000747C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A221BE19606B92000747C2 /* Foundation.framework */; };
 		D4A221C119606B92000747C2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A221C019606B92000747C2 /* CoreGraphics.framework */; };
 		D4A221C319606B92000747C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A221C219606B92000747C2 /* UIKit.framework */; };
@@ -58,6 +59,7 @@
 		384E42AF196F922600DD8200 /* windspeed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = windspeed.png; sourceTree = "<group>"; };
 		384E42B2196F961800DD8200 /* EWMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EWMenuViewController.xib; sourceTree = "<group>"; };
 		384E42B419706AD000DD8200 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		384E42B719731EE900DD8200 /* EWCDWeather.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EWCDWeather.xcdatamodel; sourceTree = "<group>"; };
 		55CC1E37C407468EB8C9D22C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		658A41F2539C48EC89668968 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		D4A221BB19606B92000747C2 /* ElementumWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElementumWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,6 +164,7 @@
 			children = (
 				D4A221CD19606B92000747C2 /* EWAppDelegate.h */,
 				D4A221CE19606B92000747C2 /* EWAppDelegate.m */,
+				384E42B619731EE900DD8200 /* EWCDWeather.xcdatamodeld */,
 				D4A221F619609DEF000747C2 /* EWMenuViewController.h */,
 				D4A221F719609DEF000747C2 /* EWMenuViewController.m */,
 				384E42B2196F961800DD8200 /* EWMenuViewController.xib */,
@@ -354,6 +357,7 @@
 				D4A221CF19606B92000747C2 /* EWAppDelegate.m in Sources */,
 				38484B6F196E3C4400965849 /* EWMTLWeather.m in Sources */,
 				D4A221F519609B3D000747C2 /* EWSideMenuViewController.m in Sources */,
+				384E42B819731EE900DD8200 /* EWCDWeather.xcdatamodeld in Sources */,
 				D4A221CB19606B92000747C2 /* main.m in Sources */,
 				D4A221F819609DEF000747C2 /* EWMenuViewController.m in Sources */,
 			);
@@ -574,6 +578,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		384E42B619731EE900DD8200 /* EWCDWeather.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				384E42B719731EE900DD8200 /* EWCDWeather.xcdatamodel */,
+			);
+			currentVersion = 384E42B719731EE900DD8200 /* EWCDWeather.xcdatamodel */;
+			path = EWCDWeather.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D4A221B319606B92000747C2 /* Project object */;
 }
